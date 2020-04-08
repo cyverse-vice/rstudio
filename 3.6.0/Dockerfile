@@ -16,6 +16,7 @@ ADD https://github.com/hairyhenderson/gomplate/releases/download/v2.5.0/gomplate
 RUN chmod a+x /usr/bin/gomplate
 
 COPY run.sh /usr/local/bin/run.sh
+RUN chmod +x /usr/local/bin/run.sh
 COPY nginx.conf.tmpl /nginx.conf.tmpl
 COPY rserver.conf /etc/rstudio/rserver.conf
 COPY supervisor-nginx.conf /etc/supervisor/conf.d/nginx.conf
