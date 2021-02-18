@@ -7,7 +7,7 @@ Based on the [Rocker-Project.org](https://rocker-project.org) Docker [RStudio `r
 
 [An Introduction to Rocker: Docker Containers for R](https://doi.org/10.32614/RJ-2017-065) Carl Boettiger and Dirk Eddelbuettel, The R Journal (2017) 9:2, pages 527-536. [https://doi.org/10.32614/RJ-2017-065 ](https://doi.org/10.32614/RJ-2017-065)
 
-[![CircleCI](https://circleci.com/gh/cyverse-vice/rstudio-base.svg?style=svg)](https://circleci.com/gh/cyverse-vice/rstudio-base)[![DockerHub](https://img.shields.io/badge/DockerHub-gray.svg?style=popout&logo=Docker)](https://hub.docker.com/r/cyversevice/rstudio-base) ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/cyverse-vice/rstudio-base/latest/main?style=flat-square) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cyversevice/rstudio-base)
+[![CircleCI](https://circleci.com/gh/cyverse-vice/rstudio-base.svg?style=svg)](https://circleci.com/gh/cyverse-vice/rstudio-base) [![DockerHub](https://img.shields.io/badge/DockerHub-gray.svg?style=popout&logo=Docker)](https://hub.docker.com/r/cyversevice/rstudio-base) ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/cyverse-vice/rstudio-base/latest/main?style=flat-square) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cyversevice/rstudio-base)
 
 
 quick launch | tag | size | metrics | build | 
