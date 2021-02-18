@@ -3,7 +3,7 @@
 
 # rstudio-base
 
-Based on the [Rocker-Project.org](https://rocker-project.org) Docker [RStudio `base` container](https://hub.docker.com/r/rocker/base) for CyVerse Discovery Environment (DE) data science workbench. CyVerse DE requires additional configuration files (e.g. `nginx`) to be compatible with our Condor and Kubernetes orchestration. 
+Based on the [Rocker-Project.org](https://rocker-project.org) Docker [RStudio `rstudio` base container](https://hub.docker.com/r/rocker/rstudio) for CyVerse Discovery Environment (DE) data science workbench. CyVerse DE requires additional configuration files (e.g. `nginx`) to be compatible with our Condor and Kubernetes orchestration. 
 
 [An Introduction to Rocker: Docker Containers for R](https://doi.org/10.32614/RJ-2017-065) Carl Boettiger and Dirk Eddelbuettel, The R Journal (2017) 9:2, pages 527-536. [https://doi.org/10.32614/RJ-2017-065 ](https://doi.org/10.32614/RJ-2017-065)
 
