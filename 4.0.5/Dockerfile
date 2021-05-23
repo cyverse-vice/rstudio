@@ -1,4 +1,4 @@
-FROM rocker/base:4.0.0-ubuntu18.04
+FROM rocker/base:4.0.5
 # This image uses the Rocker-Project Geospatial RStudio image - thanks R OpenSci and Rocker!
 
 # Build-time metadata as defined at http://label-schema.org
@@ -6,11 +6,11 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name="CyVerse RStudio Geospatial" \
-      org.label-schema.description="Built from Rocker-Project RStudio Geospatial, additional depends for CyVerse K8s workbench" \
+      org.label-schema.name="CyVerse RStudio Base" \
+      org.label-schema.description="Built from Rocker-Project RStudio Base, additional depends for CyVerse K8s workbench" \
       org.label-schema.url="https://cyverse.org" \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="e.g. https://github.com/cyverse-vice/rstudio-geospatial" \
+      org.label-schema.vcs-url="e.g. https://github.com/cyverse-vice/rstudio-base" \
       org.label-schema.vendor="CyVerse" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0.0"
