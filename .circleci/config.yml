@@ -3,25 +3,25 @@ version: 2.1
 jobs:
   build0:
     docker:
-      - image: cyversevice/rstudio-base:latest
+      - image: cyversevice/rstudio:latest
     steps:
       - checkout
       - run: rstudio-server version
   build1:
     docker:
-      - image: cyversevice/rstudio-base:4.0.5
+      - image: cyversevice/rstudio:4.0.5
     steps:
       - checkout
       - run: rstudio-server version
   build2:
     docker:
-      - image: cyversevice/rstudio-base:4.0.0-ubuntu18.04
+      - image: cyversevice/rstudio:4.0.0-ubuntu18.04
     steps:
       - checkout
       - run: rstudio-server version
   build3:
     docker:
-      - image: cyversevice/rstudio-base:3.6.3
+      - image: cyversevice/rstudio:3.6.3
     steps:
       - checkout
       - run: rstudio-server version

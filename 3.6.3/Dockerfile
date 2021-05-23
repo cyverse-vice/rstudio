@@ -1,4 +1,4 @@
-FROM rocker/base:3.6.3
+FROM rocker/rstudio:3.6.3
 # This image uses the Rocker-Project Base RStudio image - thanks R OpenSci and Rocker!
 
 # Build-time metadata as defined at http://label-schema.org
