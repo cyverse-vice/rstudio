@@ -1,4 +1,4 @@
-FROM rocker/verse:4.2.1
+FROM rocker/rstudio:4.2.1
 # This image uses the Rocker-Project verse RStudio image - thanks R OpenSci and Rocker!
 
 # Build-time metadata as defined at http://label-schema.org
@@ -7,7 +7,7 @@ ARG VCS_REF
 ARG VERSION
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="CyVerse RStudio verse" \
-      org.label-schema.description="Built from Rocker-Project RStudio Verse, additional depends for CyVerse K8s workbench" \
+      org.label-schema.description="Built from Rocker-Project RStudio Base, additional depends for CyVerse K8s workbench" \
       org.label-schema.url="https://cyverse.org" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="e.g. https://github.com/cyverse-vice/rstudio-verse" \
