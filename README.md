@@ -35,16 +35,14 @@ The default username is `rstudio` and password is `rstudio1`. To reset the passw
 
 ## Build your own Docker container and deploy on CyVerse VICE
 
-This container is intended to run on the CyVerse data science workbench, called [VICE](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html). 
-
-Unless you plan on making changes to this container, you should just use the existing launch button above. 
+This container is intended to run on the CyVerse data science workbench, called [VICE]([https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html](https://learning.cyverse.org/de/using_apps/#advanced-features-in-the-discovery-environment)). 
 
 ###### Developer notes
 
 To build your own container with a Dockerfile and additional dependencies, pull the pre-built image from DockerHub:
 
 ```
-FROM cyversevice/rstudio:latest
+FROM harbor.cyverse.org/vice/rstudio/rstudio:latest
 ```
 
-Follow the instructions in the [VICE manual for integrating your own tools and apps](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/developer_guide/building.html).
+Follow the instructions on how to [Integrate your own Containers and Apps into CyVerse](https://learning.cyverse.org/de/create_apps/)
