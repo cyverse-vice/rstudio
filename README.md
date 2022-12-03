@@ -2,9 +2,9 @@
 
 # rstudio
 
-RStudio with `verse` dependencies, based on [Rocker RStudio Docker container](https://hub.docker.com/r/rocker/verse) for CyVerse VICE. VICE requires additional configuration files (e.g. `nginx`) to be compatible with our Condor and Kubernetes orchestration. 
+Based on the Rocker-Project.org Docker [RStudio base container](https://hub.docker.com/r/rocker/r-base) for CyVerse Discovery Environment (DE) data science workbench. CyVerse DE requires additional configuration files (e.g. `nginx`) to be compatible with Kubernetes orchestration.
 
-[![CircleCI](https://circleci.com/gh/cyverse-vice/rstudio.svg?style=svg)](https://circleci.com/gh/cyverse-vice/rstudio) ![GH actions branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main) ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/cyverse-vice/rstudio/latest/main?style=flat-square) [![Docker Pulls](https://img.shields.io/docker/pulls/cyversevice/rstudio?color=blue&logo=docker&logoColor=white)](https://hub.docker.com/r/cyversevice/rstudio) 
+[![CircleCI](https://circleci.com/gh/cyverse-vice/rstudio.svg?style=svg)](https://circleci.com/gh/cyverse-vice/rstudio) ![GH actions branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main) ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/cyverse-vice/rstudio/latest/main?style=flat-squa/v/) [![Docker Pulls](https://img.shields.io/docker/pulls/cyversevice/rstudio?color=blue&logo=docker&logoColor=white)](https://hub.docker.com/r/cyversevice/rstudio) 
 
 quick launch | size | 
 ------------ | ---- | 
@@ -25,6 +25,10 @@ docker pull cyversevice/rstudio:latest
 
 ```
 docker run -it --rm -v /$HOME:/app --workdir /app -p 8787:80 -e REDIRECT_URL=http://localhost:8787 cyversevice/rstudio:latest
+
+or
+
+docker run -it --rm -p 8787:80 -e REDIRECT_URL=http://localhost:8787 harbor.cyverse.org/vice/rstudio/rstudio:latest
 ```
 
 The default username is `rstudio` and password is `rstudio1`. To reset the password, add the flag `-e PASSWORD=<yourpassword>` in the `docker run` statement.
